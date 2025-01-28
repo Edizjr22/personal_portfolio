@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main-container">
+      <!-- Welcome Page -->
+      <div id="welcome-page" class="page active">
+        <div class="container">
+          <div class="content">
+            <h1>Ediz Ertekin Jr.</h1>
+            <h2>Undergraduate ML Researcher | Holistic AI</h2>
+            <p>
+              Thank you for stopping by, I hope you enjoy exploring my personal
+              portfolio. Feel free to reach out to me if you have any questions.
+            </p>
+            <div class="buttons">
+              <button onclick="navigateTo('about-me')">
+                <strong>ABOUT ME</strong>
+              </button>
+              <button onclick="navigateTo('academics')">
+                <strong>ACADEMICS</strong>
+              </button>
+              <button onclick="navigateTo('research')">
+                <strong>RESEARCH</strong>
+              </button>
+              <button onclick="navigateTo('experience')">
+                <strong>EXPERIENCE</strong>
+              </button>
+            </div>
+            <div class="social-icons">
+              <a class="icon" onclick="openResume()">
+                <img src="icons/icons8-resume-50.png" alt="CV" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ediz-ertekin-jr/"
+                target="_blank"
+                class="icon"
+              >
+                <img src="icons/icons8-linkedin-50.png" alt="LinkedIn" />
+              </a>
+              <a
+                href="https://github.com/Edizjr22"
+                target="_blank"
+                class="icon"
+              >
+                <img src="icons/icons8-github-50.png" alt="GitHub" />
+              </a>
+              <a href="mailto:eertekin22@berkeley.edu" class="icon">
+                <img src="icons/icons8-email-48.png" alt="Email" />
+              </a>
+              <a href="tel:+19259849660" class="icon">
+                <img src="icons/icons8-iphone-50.png" alt="Phone" />
+              </a>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/headshot.JPG" alt="Self portrait" />
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me Page -->
+      <div id="about-me" class="page">
+        <div class="container">
+          <div class="content">
+            <h1>About Me</h1>
+            <p>
+              Hello! I would like to share a little about myself. My name is
+              Ediz Ertekin Jr., I am a recent graduate from UC Berkeley with a
+              Bachelor's degree in Computer Science and a minor in Data Science.
+              I am passionate about the intersection of technology and
+              mathematics, which inspired my academic journey and continues to
+              fuel my interest in exploring opportunities various fields
+              including machine learning, software development, and computer
+              vision.
+
+              <br />
+              <br />
+              In my free time, I enjoy practicing piano—a few of my favorite
+              pieces include Moonlight Sonata, River Flows in You, and
+              Dandelions by Ruth B. I also enjoy reading; currently, I'm reading
+              Deep Work by Cal Newport. Some of my all-time favorites include
+              Start with Why by Simon Sinek, Ready Player One by Ernest Cline,
+              and Zero to One by Peter Thiel. Additionally, I love traveling and
+              spending time outdoors, engaging in activities like hiking,
+              running, snowboarding, and cycling. If you are interested, click
+              the button below to view some of my photos from my travels.
+            </p>
+            <div class="buttons">
+              <button onclick="navigateTo('welcome-page')">HOME</button>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/jossie_edo.JPG" alt="About Me Photo" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Academics Page -->
+      <div id="academics" class="page">
+        <div class="container academics-container">
+          <div class="split-content">
+            <div class="left-panel">
+              <h2>Coursework</h2>
+              <div class="scrollable-content">
+                <ul>
+                  <li class="course-category">Computer Science</li>
+                  <ul class="course-list">
+                    <li>
+                      CS 61A: Structure and Interpretation of Computer Programs
+                    </li>
+                    <li>CS 61B: Data Structures</li>
+                    <li>CS 61C: Machine Structures</li>
+                    <li>CS 70: Discrete Mathematics and Probability Theory</li>
+                    <li>CS 161: Computer Security</li>
+                    <li>CS 162: Operating Systems and System Programming</li>
+                    <li>CS 170: Algorithms and Intractable Problems</li>
+                    <li>CS 198: Competitive Programming</li>
+                  </ul>
+
+                  <li class="course-category">Machine Learning</li>
+                  <ul class="course-list">
+                    <li>CS 180: Computer Vision</li>
+                    <li>CS 189: Introduction to Machine Learning</li>
+                    <li>EECS 127: Optimization Models in Engineering</li>
+                  </ul>
+
+                  <li class="course-category">Mathematics</li>
+                  <ul class="course-list">
+                    <li>Math 1A: Calculus I</li>
+                    <li>Math 1B: Calculus II</li>
+                    <li>Math 53: Multivariable Calculus</li>
+                    <li>Math 54: Linear Algebra and Differential Equations</li>
+                    <li>Math 55: Discrete Mathematics</li>
+                  </ul>
+
+                  <li class="course-category">Physics</li>
+                  <ul class="course-list">
+                    <li>Physics 7A: Physics for Scientists and Engineers</li>
+                    <li>Physics 7B: Physics for Scientists and Engineers</li>
+                    <li>Physics 7C: Physics for Scientists and Engineers</li>
+                  </ul>
+
+                  <li class="course-category">Data Science</li>
+                  <ul class="course-list">
+                    <li>DATA 8: Foundations of Data Science</li>
+                    <li>DATA 100: Principles and Techniques of Data Science</li>
+                    <li>Data 104: Ethics of Data Science</li>
+                  </ul>
+
+                  <li class="course-category">Entrepreneurship</li>
+                  <ul class="course-list">
+                    <li>Engin 183A: Richard Newton Lecture Series</li>
+                    <li>Engin 183E: Technology Entrepreneurship</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <div class="right-panel">
+              <h2>Projects</h2>
+              <div class="scrollable-content">
+                <ul>
+                  <li class="course-category">Course Projects</li>
+                  <ul class="course-list">
+                    <li>Augmented Reality (Python, OpenCV) cs180</li>
+                    <li>Facial Keypoint Detection (PyTorch) cs180</li>
+                    <li>Diffusion Models from Scratch! (PyTorch) cs180</li>
+                    <li>Housing Appraisal GLM (Pandas) data100</li>
+                    <li>Spam Filter (scikit-learn) data100</li>
+                    <li>World Exploration Game (Java) 61b</li>
+                    <li>Deque API (Java) 61b</li>
+                    <li>Scheme Interpreter (Python, Scheme) 61a</li>
+                    <li>Ants vs. SomeBees (Python) 61a</li>
+                    Code available upon request for course projects.
+                  </ul>
+
+                  <li class="course-category">Personal Projects</li>
+                  <ul class="course-list">
+                    <li>Neural Network From Scratch (NumPy)</li>
+                    <li>Deep Learning on MNIST (PyTorch)</li>
+                    <li>AI Chatbot (Python, JS, Tailwind)</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar">
+              <img src="images/berkeley_logo.png" alt="Berkeley Logo" />
+              <img src="images/CDSS_logo.jpeg" alt="UCB Logo" />
+              <div class="buttons">
+                <button onclick="navigateTo('welcome-page')">Home</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="research" class="page">
+        <div class="container research-container">
+          <div class="research-split-content">
+            <div class="research-image">
+              <img src="images/holistic_logo.jpeg" alt="Holistic AI Logo" />
+              <div class="buttons">
+                <button onclick="navigateTo('welcome-page')">HOME</button>
+              </div>
+            </div>
+            <div class="research-content">
+              <h1>Research</h1>
+              <div class="research-project">
+                <h2>
+                  JobFair: A Framework for Benchmarking Gender Hiring Bias in
+                  Large Language Models
+                </h2>
+                <p>
+                  The use of Large Language Models (LLMs) in hiring has led to
+                  legislative actions to protect vulnerable demographic groups.
+                  This paper presents a novel framework for benchmarking
+                  hierarchical gender hiring bias in Large Language Models
+                  (LLMs) for resume scoring, revealing significant issues of
+                  reverse gender hiring bias and overdebiasing.
+                </p>
+                <div class="paper-button">
+                  <a
+                    href="https://arxiv.org/abs/2406.15484"
+                    target="_blank"
+                    class="paper-link"
+                  >
+                    <button>PAPER</button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="research-divider"></div>
+
+              <div class="research-project">
+                <h2>
+                  SAGED: A Holistic Bias-Benchmarking Pipeline for Language
+                  Models with Customisable Fairness Calibration
+                </h2>
+                <p>
+                  The development of unbiased large language models is widely
+                  recognized as crucial, yet existing benchmarks fall short in
+                  detecting biases due to limited scope, contamination, and lack
+                  of a fairness baseline. SAGED(bias) is the first holistic
+                  benchmarking pipeline to address these problems. The pipeline
+                  encompasses five core stages: scraping materials, assembling
+                  benchmarks, generating responses, extracting numeric features,
+                  and diagnosing with disparity metrics.
+                </p>
+                <div class="paper-button">
+                  <a
+                    href="https://arxiv.org/abs/2409.11149"
+                    target="_blank"
+                    class="paper-link"
+                  >
+                    <button>PAPER</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="experience" class="page">
+        <div class="container experience-container">
+          <div class="experience-content">
+            <h1>Experience</h1>
+
+            <div class="experience-item">
+              <h2>Undergraduate ML Researcher</h2>
+              <h3>Holistic AI | April 2024 - Present</h3>
+              <ul class="experience-list">
+                <li>
+                  Conducted research on mitigating gender hiring biases in Large
+                  Language Models (LLMs) used for resume scoring
+                </li>
+                <li>
+                  Developed a benchmarking framework to evaluate gender biases
+                  like Level, Spread, Taste-based, and Statistical bias using
+                  anonymized resume data
+                </li>
+                <li>
+                  Implemented counterfactual metrics for hiring bias, such as
+                  Rank After Scoring (RAS), Impact Ratio, and Permutation
+                  Test-Based Metrics
+                </li>
+                <li>
+                  Analyzed data across 10 LLMs, identifying male biases in
+                  certain industries and created visualizations to highlight
+                  bias patterns, aiding interpretation
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-divider"></div>
+
+            <div class="experience-item">
+              <h2>Software Engineering Intern</h2>
+              <h3>Harness io | May 2024 - Aug 2024</h3>
+              <ul class="experience-list">
+                <li>
+                  Built a data platform by implementing Apache Kafka for
+                  seamless connectivity between MongoDB and AlloyDB
+                </li>
+                <li>
+                  Leveraged PostgreSQL and SQLMesh for real-time data filtering,
+                  and deployed a Cube API semantic layer
+                </li>
+                <li>
+                  Designed a Harness marketplace MVP, creating a Command Line
+                  Interface (CLI) to streamline the generation of custom
+                  plugins,improving customer experience and workflow efficiency
+                  by 50%
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-divider"></div>
+
+            <div class="experience-item">
+              <h2>Machine Learning Engineer</h2>
+              <h3>Nexa Speech | Jan 2024 - May 2024</h3>
+              <ul class="experience-list">
+                <li>
+                  Contributed to the development of a machine learning system
+                  for multi-agent conversations, leveraging Wisper, FastAPI, and
+                  ElevenLabs to build a robust speech-to-speech pipeline
+                </li>
+                <li>
+                  Fine-tuned agent interactions using RAG and prompt engineering
+                  based on user feedback
+                </li>
+                <li>
+                  Presented my work at the Data Science Discovery Program
+                  Symposium
+                </li>
+                <div class="paper-button">
+                  <a
+                    href="https://tinyurl.com/4mztezvt"
+                    target="_blank"
+                    class="paper-link"
+                  >
+                    <button>Poster</button>
+                  </a>
+                </div>
+              </ul>
+            </div>
+
+            <div class="experience-divider"></div>
+
+            <div class="experience-item">
+              <h2>Software Engineering Intern</h2>
+              <h3>Snaplogic | May 2023 - Aug 2023</h3>
+              <ul class="experience-list">
+                <li>
+                  Developed a new library for SnapGPT, an AI-powered platform
+                  for automating data integration pipelines across cloud data
+                  warehouses, leveraging NLP pratices and a RAG infrastructure
+                </li>
+                <li>
+                  Engineered a module to support premium integrations, enhancing
+                  the platform's capabilities for complex scenarios
+                </li>
+                <li>
+                  Developed algorithms for seamless data migration across cloud
+                  solutions, optimizing efficiency, and reliability
+                </li>
+                <li>
+                  Implemented tests for validation efforts to ensure accuracy
+                  and stability of integration pipelines, driving platform
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="buttons">
+            <button onclick="navigateTo('welcome-page')">HOME</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Film Photography Page -->
+      <div id="photography" class="page">
+        <div class="container photography-container">
+          <div class="photo-content">
+            <h1>Photography</h1>
+
+            <div class="location-section">
+              <h2>Japan</h2>
+              <div class="photo-grid">
+                <img src="images/japan1.jpg" alt="Japan Photo 1" />
+                <img src="images/japan2.jpg" alt="Japan Photo 2" />
+                <img src="images/japan3.jpg" alt="Japan Photo 3" />
+              </div>
+            </div>
+
+            <div class="location-divider"></div>
+
+            <div class="location-section">
+              <h2>California</h2>
+              <div class="photo-grid">
+                <img src="images/cali1.jpg" alt="California Photo 1" />
+                <img src="images/cali2.jpg" alt="California Photo 2" />
+                <img src="images/cali3.jpg" alt="California Photo 3" />
+              </div>
+            </div>
+
+            <div class="buttons">
+              <button onclick="navigateTo('about-me')">BACK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

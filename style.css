@@ -104,7 +104,7 @@ body {
 
 #about-me .image {
   flex: 1;
-  max-width: 60%; /* Increased from 50% */
+  max-width: 40%; /* Increased from 50% */
 }
 
 #about-me .content {

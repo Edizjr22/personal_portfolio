@@ -1,3 +1,8 @@
 {
-  "routes": [{ "src": "/Resume_2025.pdf", "dest": "/Resume_2025.pdf" }]
+  "version": 2,
+  "builds": [{ "src": "*.html", "use": "@vercel/static" }],
+  "routes": [
+    { "src": "/Resume_2025.pdf", "dest": "/public/Resume_2025.pdf" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
 }

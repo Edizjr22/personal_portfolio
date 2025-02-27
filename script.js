@@ -32,5 +32,5 @@ window.addEventListener("load", () => {
 });
 
 function openResume() {
-  window.open("Resume_2025.pdf", "_blank");
+  window.open("/Resume_2025.pdf", "_blank");
 }
